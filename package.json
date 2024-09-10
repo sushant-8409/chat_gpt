@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "server": "cd backend && node index.js",
+    "server": "cd backend && npm install && node index.js",
     "dev": "concurrently -n \"client, server\" -c \"bgBlue, byYellow\" \"vite\" \"npm run server\"",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
